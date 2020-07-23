@@ -1,3 +1,6 @@
+Student.delete_all
+Teacher.delete_all
+
 ryan = Student.create({first_name: "Ryan", last_name: "Flynn", grade_level: "10th Grade"})
 john = Student.create({first_name: "John", last_name: "Martin", grade_level: "11th Grade"})
 marissa = Student.create({first_name: "Marissa", last_name: "Rhodes", grade_level: "9th Grade"})
