@@ -26,3 +26,8 @@ Returns number of exams they have.
 
 #create_exam(name, topic)
 Takes in a name and topic and creates a new exam associated with that teacher.
+
+Exam
+
+.all_exams_in_topic(topic_name)
+returns all exams in a particular topic

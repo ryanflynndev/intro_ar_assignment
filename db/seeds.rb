@@ -1,6 +1,8 @@
 Student.delete_all
 Teacher.delete_all
 GradeLevel.delete_all
+StudentExam.delete_all
+Exam.delete_all
 
 ms_smith = Teacher.create({last_name: "Smith", grade_level: "10th grade", years_of_experience: 6})
 mr_james = Teacher.create({last_name: "James", grade_level: "9th grade", years_of_experience: 3})

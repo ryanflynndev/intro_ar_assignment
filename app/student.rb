@@ -11,7 +11,7 @@ class Student < ActiveRecord::Base
 
     def self.all_in_grade(grade)
         #made this method better 
-        self.where grade: num
+        self.all.select{|student| student.grade_level == grade}
     end
 
     def topics_to_study
