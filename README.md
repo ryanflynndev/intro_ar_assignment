@@ -1,5 +1,6 @@
-# AR-Environment-Skeleton
+Students have many Teachers, and Teachers have many students.
+Exams belong to a Teacher, and a Teacher can have many Exams.
+Students can have many Exams, and Exams can have many Students.
 
-You can use this repo to build new Activerecord projects
 
-* You will need to create your own app/models directories
+

@@ -14,3 +14,10 @@ mackenzie = Student.create({first_name: "Mackenzie", last_name: "James", grade_l
 
 ryan_smith = GradeLevel.create(student_id: ryan.id, teacher_id: ms_smith.id )
 ryan_jones = GradeLevel.create(student_id: ryan.id, teacher_id: mr_jones.id )
+
+biology_exam = Exam.create(name: "Intro to Biology", teacher_id: mr_james.id, topic: "Biology")
+comp_sci_exam = Exam.create(name: "Intro to Algorithms", teacher_id: ms_jenkins.id, topic: "Computer Science")
+
+marissa_biology = StudentExam.create(student_id: marissa.id, exam_id: biology_exam.id)
+mackenzie_biology = StudentExam.create(student_id: mackenzie.id, exam_id: biology_exam.id)
+marissa_comp_sci = StudentExam.create(student_id: marissa.id, exam_id: comp_sci_exam.id)
