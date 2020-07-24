@@ -3,7 +3,7 @@ class Exam < ActiveRecord::Base
     has_many :student_exams 
     has_many :students, through: :student_exams
 
-    def self.all_topics(topic_name) 
+    def self.all_exams_in_topic(topic_name) 
         self.all.select{|topic| exam.topic == num}
     end
 end
