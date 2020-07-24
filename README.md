@@ -19,7 +19,7 @@ counts how many exams that student has
 Teacher
 
 #topics_to_teach
-returns all topics that teacher needs to teach
+returns all topics from exams the teacher has 
 
 #exam_count
 Returns number of exams they have. 

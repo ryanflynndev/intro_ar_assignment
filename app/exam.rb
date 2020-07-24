@@ -4,6 +4,6 @@ class Exam < ActiveRecord::Base
     has_many :students, through: :student_exams
 
     def self.all_exams_in_topic(topic_name) 
-        self.all.select{|topic| exam.topic == num}
+        self.where topic: topic_name
     end
 end
