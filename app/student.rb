@@ -3,6 +3,7 @@ class Student < ActiveRecord::Base
     has_many :student_exams
     has_many :teachers, through: :grade_levels
     has_many :exams, through: :student_exams
+    has_many: :notebooks
 
 
     def full_name
