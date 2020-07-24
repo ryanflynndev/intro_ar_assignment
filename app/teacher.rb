@@ -9,4 +9,16 @@ class Teacher < ActiveRecord::Base
             false
         end
     end
+
+    def topics_to_teach
+        self.exams.map{|exam| exam.topic}
+    end
+
+    def exam_count 
+        self.exams.count
+    end
+
+    def create_exam(name, topic)
+        Exam.create(name: name, teacher_id: self.id, topic: topic)
+    end
 end

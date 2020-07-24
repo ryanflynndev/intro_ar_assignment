@@ -9,7 +9,16 @@ class Student < ActiveRecord::Base
         self.first_name + " " + self.last_name
     end
 
-    def self.all_in_grade(grade) 
-        self.all.select{|student| student.grade_level == grade}
+    def self.all_in_grade(grade)
+        #made this method better 
+        self.where grade: num
+    end
+
+    def topics_to_study
+        self.exams.map{|exam| exam.topic}
+    end
+
+    def exam_count
+        self.exams.count
     end
 end
